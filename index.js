@@ -37,6 +37,9 @@ run().catch(console.dir);
 app.get("/", (req, res) => {
   res.send("Server Is Running");
 });
+app.get("/test", (req, res) => {
+  res.send("Server Is Running");
+});
 
 app.listen(port, () => {
   console.log(`QuickCash Server Running in Port ${port}`);
